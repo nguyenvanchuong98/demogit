@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ex2</title>
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.container{
+		width: 100%;
+		background: blue;
+	}
+	.menu{
+		width: 1180px;
+		margin: 0 auto;
+	}
+	ul li{
+		display: inline-block;
+		list-style: none;
+		padding: 0 15px;
+		line-height: 80px;
+		text-align: center;
+	}
+	ul li a{
+		font-size: 16px;
+		text-align: center;
+		font-weight: bold;
+		color: white;
+		text-decoration: none;
+	}
+	.menu ul li:hover{
+		background: white;
+	}
+	.menu>ul>li:hover >a{
+		color: blue;
+	}
+	.menu2>li:hover >a{
+		color: blue;
+	}
+	.abc{
+		position: relative;
+	}
+	.menu2{
+		display: none;  
+		position: absolute;
+		top: 80;
+		left: 0;
+		width: 200px;
+		background: blue;
+	}
+	.menu2 li{
+		display: block;
+	}
+	.abc:hover .menu2{
+		display: block;
+	}
+</style>
+<body>
+	<div class="container">
+		<div class="menu">
+			<ul>
+				<li><a href="#">Trang chủ</a></li>
+				<li class="abc"><a href="#">Diễn đàn</a>
+				<ul class="menu2">
+					<li><a href="#">Thể Thao </a></li>
+					<li><a href="#">Tin học</a></li>
+				</ul>
+				</li>
+				<li><a href="#">Tin tức </a></li>
+				<li><a href="#">Hỏi đáp </a></li>
+				<li><a href="#">Liên hệ</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
